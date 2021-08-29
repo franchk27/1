@@ -1,0 +1,119 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Antiban = Instance.new("TextButton")
+local InfiniteYeld = Instance.new("TextButton")
+local GamerLib = Instance.new("TextButton")
+local MysticHub = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local OpenMain = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Main.Position = UDim2.new(0.21177803, 0, 0.278560251, 0)
+Main.Size = UDim2.new(0, 331, 0, 207)
+Main.Visible = false
+Main.Active = true
+Main.Draggable = true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextLabel.Size = UDim2.new(0, 331, 0, 31)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Scripts Mystic Falls        "
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+Antiban.Name = "Antiban"
+Antiban.Parent = Main
+Antiban.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Antiban.Position = UDim2.new(0.0664652586, 0, 0.289855063, 0)
+Antiban.Size = UDim2.new(0, 134, 0, 50)
+Antiban.Font = Enum.Font.SourceSans
+Antiban.Text = "Antiban"
+Antiban.TextColor3 = Color3.fromRGB(0, 0, 0)
+Antiban.TextSize = 14.000
+Antiban.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/franchk27/1/main/2"))()
+end)
+
+InfiniteYeld.Name = "Infinite Yeld"
+InfiniteYeld.Parent = Main
+InfiniteYeld.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+InfiniteYeld.Position = UDim2.new(0.531722069, 0, 0.64734298, 0)
+InfiniteYeld.Size = UDim2.new(0, 134, 0, 50)
+InfiniteYeld.Font = Enum.Font.SourceSans
+InfiniteYeld.Text = "Infinite Yeld"
+InfiniteYeld.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYeld.TextSize = 14.000
+InfiniteYeld.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+GamerLib.Name = "Gamer Lib"
+GamerLib.Parent = Main
+GamerLib.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+GamerLib.Position = UDim2.new(0.0664652586, 0, 0.64734304, 0)
+GamerLib.Size = UDim2.new(0, 134, 0, 50)
+GamerLib.Font = Enum.Font.SourceSans
+GamerLib.Text = "Gamer Lib"
+GamerLib.TextColor3 = Color3.fromRGB(0, 0, 0)
+GamerLib.TextSize = 14.000
+GamerLib.MouseButton1Down:connect(function()
+	loadstring(game:GetObjects("rbxassetid://6914844894")[1].Source)()
+end)
+
+MysticHub.Name = "Mystic Hub"
+MysticHub.Parent = Main
+MysticHub.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+MysticHub.Position = UDim2.new(0.531722069, 0, 0.289855063, 0)
+MysticHub.Size = UDim2.new(0, 134, 0, 50)
+MysticHub.Font = Enum.Font.SourceSans
+MysticHub.Text = "Mystic Hub"
+MysticHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+MysticHub.TextSize = 14.000
+MysticHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/franchk27/1/main/1"))()
+end)
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Close.Position = UDim2.new(0.906344414, 0, 0, 0)
+Close.Size = UDim2.new(0, 31, 0, 31)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+Close.MouseButton1Down:connect(function()
+	Main.Visible = false
+	OpenMain.Visible = true
+end)
+
+OpenMain.Name = "OpenMain"
+OpenMain.Parent = ScreenGui
+OpenMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenMain.Position = UDim2.new(0, 0, 0.482003123, 0)
+OpenMain.Size = UDim2.new(0, 58, 0, 23)
+
+Open.Name = "Open"
+Open.Parent = OpenMain
+Open.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Open.Size = UDim2.new(0, 58, 0, 23)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 14.000
+Open.MouseButton1Down:connect(function()
+	OpenMain.Visible = false
+	Main.Visible = true
+end)
